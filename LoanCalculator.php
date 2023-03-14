@@ -2,7 +2,7 @@
 /*
 Plugin Name: Loan Calculator
 Description: Кредитен калкулатор
-Version: 1.0.1
+Version: 1.0.2
 Author: p.d.p
 */
 defined("ABSPATH") or die("No script kiddies please!");
@@ -16,7 +16,18 @@ class LoanCalculator
         add_action("admin_init", [$this, "loan_calculator_activate"]);
         add_action('admin_init', [$this, 'loan_calculator_register_settings']);
         add_action('admin_menu', [$this, 'loan_calculator_add_options_page']);
+
+	    add_filter( 'plugin_action_links_loan-calculator/LoanCalculator.php',
+            [$this, 'plugin_settings_link'] );
+
     }
+
+	function plugin_settings_link( $links ) {
+		$settings_link = '<a href="' . admin_url( 'options-general.php?page=loan-calculator' ) . '">Settings</a>';
+		array_unshift( $links, $settings_link );
+
+		return $links;
+	}
 
     public function lc_register_scripts()
     {
