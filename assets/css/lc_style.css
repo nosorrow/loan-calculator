@@ -40,7 +40,7 @@
   width: 38px;
   border-radius: 50%;
   border: 1px solid #0050b2;
-  background: url('/wp-content/plugins/loan-calculator/images/arrow.png') center no-repeat;
+  background: url('arrow.png') center no-repeat;
   cursor: pointer;
 }
 
@@ -53,7 +53,7 @@
   height: 38px;
   width: 38px;
   border-radius: 50%;
-  background: url('/wp-content/plugins/loan-calculator/images/arrow.png') center no-repeat;
+  background: url('arrow.png') center no-repeat;
   border: 1px solid #0050b2;
 }
 
@@ -74,7 +74,7 @@
   height: 38px;
   width: 38px;
   border-radius: 50%;
-  background: url('/wp-content/plugins/loan-calculator/images/arrow.png') center no-repeat;
+  background: url('arrow.png') center no-repeat;
   border: 1px solid #0050b2;
 }
 

@@ -2,7 +2,7 @@
 /*
 Plugin Name: Loan Calculator
 Description: Кредитен калкулатор
-Version: 1.0.0
+Version: 1.0.1
 Author: p.d.p
 */
 defined("ABSPATH") or die("No script kiddies please!");
